@@ -17,17 +17,18 @@ async function menu() {
   });
 }
 
+export default function RandomLetter() {
+  console.log("\nImported random letter function");
+  const alphabet = "abcdefghijklmnopqrstuvwxyz"
+  const result = alphabet[Math.floor(Math.random() * alphabet.length)]
+  console.log(result);
+}
+
+
+
 menu();
 
-export default function RandomLetter() {
-  console.log("\n Imported random letter function");
-  var result = "";
-  var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var charlength = characters.length;
-  for (var i = 0; i < charlength; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charlength));
-  }
-  return result;
-}
+
+
 
 StarbeamUnit();
