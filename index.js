@@ -1,6 +1,5 @@
 import inquirer from "inquirer";
 import StarbeamUnit from "./functions/starbeam_unit.js";
-export default { RandomLetter };
 
 async function menu() {
   console.log("Select a code type:");
@@ -20,7 +19,7 @@ async function menu() {
 
 menu();
 
-function RandomLetter(result) {
+export default function RandomLetter() {
   console.log("\n Imported random letter function");
   var result = "";
   var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
