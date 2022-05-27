@@ -1,5 +1,4 @@
 import inquirer from "inquirer";
-import StarbeamUnit from "./functions/starbeam_unit.js";
 
 async function menu() {
   console.log("Select a code type:");
@@ -20,14 +19,12 @@ async function menu() {
 menu();
 
 export default function RandomLetter() {
-  console.log("\n Imported random letter function");
-  var result = "";
-  var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var charlength = characters.length;
-  for (var i = 0; i < charlength; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charlength));
-  }
-  return result;
+  console.log("\nImported random letter function");
+  const alphabet = "abcdefghijklmnopqrstuvwxyz"
+  const result = alphabet[Math.floor(Math.random() * alphabet.length)]
+  console.log(result);
 }
+
+
 
 StarbeamUnit();
